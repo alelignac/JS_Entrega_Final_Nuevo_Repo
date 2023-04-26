@@ -22,7 +22,7 @@ const obtenerProductos = async() =>{
         productos.append(div);
 
         let comprar = document.createElement("button");
-        comprar.innerText = "Agregar al carito +";
+        comprar.innerText = "¡Agregar al carrito!";
         comprar.className = "agregar";
 
         div.append(comprar);

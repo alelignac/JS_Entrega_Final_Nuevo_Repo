@@ -1,4 +1,6 @@
 
+ ///////////// Fetch a JSON externo Chuck Norris /////////////
+ 
  fetch("https://api.chucknorris.io/jokes/random")
  .then(response => response.json())
  .then(data => {
@@ -10,4 +12,3 @@
   listado.append(li)
    
  })
- //let listado = document.getElementById("listado");

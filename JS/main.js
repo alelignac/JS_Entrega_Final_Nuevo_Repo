@@ -5,6 +5,8 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 chango = JSON.parse(localStorage.getItem("carrito")) || []
 
+///////////// Obtengo Productos /////////////
+
 const obtenerProductos = async() =>{
     const res = await fetch("./productos.json");
     const data = await res.json();
@@ -27,7 +29,7 @@ const obtenerProductos = async() =>{
 
         div.append(comprar);
         
-        
+ ///////////// Evento Click /////////////       
 
         comprar.addEventListener("click",() =>{
             const repetido = chango.some((productoRepetido) => productoRepetido.id === producto.id);

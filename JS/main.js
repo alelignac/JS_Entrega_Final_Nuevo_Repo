@@ -1,9 +1,9 @@
 const productos = document.getElementById("contenedor");
 const abrirCarritos = document.getElementById("abrirCarrito");
-const carritoProductos = document.getElementById("changuitos");
+const carritoProductos = document.getElementById("changos");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
-changuito = JSON.parse(localStorage.getItem("carrito")) || []
+chango = JSON.parse(localStorage.getItem("carrito")) || []
 
 const obtenerProductos = async() =>{
     const res = await fetch("./productos.json");
@@ -30,16 +30,16 @@ const obtenerProductos = async() =>{
         
 
         comprar.addEventListener("click",() =>{
-            const repetido = changuito.some((productoRepetido) => productoRepetido.id === producto.id);
+            const repetido = chango.some((productoRepetido) => productoRepetido.id === producto.id);
 
             if(repetido){
-                changuito.map((prod) =>{
+                chango.map((prod) =>{
                     if(prod.id === producto.id){
                         prod.cantidad++;
                     }
                 });
             }else{
-                changuito.push({
+                chango.push({
                     id : producto.id,
                     imagen : producto.imagen,
                     nombre : producto.nombre,

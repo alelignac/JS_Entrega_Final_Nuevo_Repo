@@ -28,6 +28,9 @@ header{
     margin-right: 5vh;    
 }
 
+p{
+    color:rgb(253, 113, 6);
+}
 .btn-compra {
     width: 15%;
     align-items: center;
@@ -130,15 +133,17 @@ body{
 
 .contenedor .bebidas img{
     width: 220px;
-    height: 220px;
+    height: 240px;
 }
 
 .contenedor .bebidas h3{
+    color: rgb(245, 72, 72);
     font-size: 20px;
     font-weight: 600;
 }
 
 .contenedor .bebidas b{
+    color: rgb(255, 145, 0);
     font-size: 20px;
     padding: 0 1rem;
 }
@@ -163,25 +168,27 @@ body{
 }
 
 .ver-carrito{
+    cursor: pointer;
     font-size: 43px;
     height: 65px;
     width: 65px;
-    background-color: #333;
+    background-color: #b6b6b6;
     position: fixed;
     margin: 0;
     padding: 0;
-    margin-left: 96%;
-    border-radius: 49px;
+    margin-left: 94%;
+    margin-top: 35%;
+    border-radius: 10px;
 }
 
-.style-changuito{
+.style-chango{
     width: 100%;
     margin: -5% 15%;
     max-width: 70%;
     max-height: 70%;
     flex-direction: column;
     align-items: center;
-    background-color: #636161;
+    background-color: #444342;
     position: fixed;
     overflow: auto;
     z-index: 9;
@@ -218,7 +225,7 @@ body{
     margin-right: -90px;
 }
 
-.style-changuito > div > img{
+.style-chango > div > img{
     height: 120px;
     width: 120px;
 }
@@ -235,10 +242,6 @@ b{
     font-size: 25px;
     padding-left: 1%;
     padding-right: 25%;
-}
-
-.borrar-producto{
-    cursor: pointer;
 }
 
 .cantidad-carrito{
@@ -262,9 +265,22 @@ b{
 }
 
 .restar{
+    color: red;
     cursor: pointer;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+
+.borrar-producto{
+    color: red;
+    cursor: pointer;
+    font-size: 4vh;
+    margin-bottom: 1vh;
 }
 
 .sumar{
     cursor: pointer;
+    color: greenyellow;
+    font-size: 4vh;
+    margin-bottom: 1vh;
 }

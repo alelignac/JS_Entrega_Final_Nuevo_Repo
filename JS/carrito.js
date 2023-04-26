@@ -10,29 +10,31 @@ function agregarAlCarrito() {
       <h2 class="titulo-carrito">Carrito de bebidas</h2>
     `;
     carritoProductos.append(carHeader);
-    const carBoton = document.createElement("h4");
-    carBoton.innerHTML = "X";
-    carBoton.className = "car-boton-cerrar";
-    carBoton.addEventListener("click", () => {
+    const carritoBoton = document.createElement("h4");
+    carritoBoton.innerHTML = "X";
+    carritoBoton.className = "car-boton-cerrar";
+    carritoBoton.addEventListener("click", () => {
       carritoProductos.style.display = "none";
     });
-    carHeader.appendChild(carBoton);
+    carHeader.appendChild(carritoBoton);
     let total = 0;
-    changuito.forEach((producto) => {
-      let carContenido = document.createElement("div");
-      carContenido.className = "medioCarrito";
-      carContenido.innerHTML = `
+    chango.forEach((producto) => {
+      let carritoContenido = document.createElement("div");
+      carritoContenido.className = "medioCarrito";
+      carritoContenido.innerHTML = `
               <img src="${producto.imagen}">
-              <h3 class="nombre-carrito">${producto.nombre}</h3>
-              <b>${producto.precio}$</b>
+              <h3 class="cantidad-en-carrito">${producto.nombre}</h3>
+              <h2 class="cantidad-en-carrito">${producto.precio}$</h2>
+              
+              <h2 class="cantidad-en-carrito">Cantidad: ${producto.cantidad}</h2>
+              
+              <h2 class="total-carrito">Total: ${producto.cantidad * producto.precio}$</h2>
               <span class="restar"> - </span>
-              <p class="cantidad-en-carrito">Cantidad: ${producto.cantidad}</p>
               <span class="sumar"> + </span>
-              <p class="total-carrito">Total: ${producto.cantidad * producto.precio}$</p>
-              <span class="borrar-producto"> ❌ </span>
+              <span class="borrar-producto"> x </span>
           `;
-      carritoProductos.append(carContenido);
-      let restar = carContenido.querySelector(".restar");
+      carritoProductos.append(carritoContenido);
+      let restar = carritoContenido.querySelector(".restar");
       restar.addEventListener("click", () => {
         if (producto.cantidad !== 1) {
           producto.cantidad--;
@@ -40,13 +42,13 @@ function agregarAlCarrito() {
           agregarAlCarrito();
         }
       });
-      let sumar = carContenido.querySelector(".sumar");
+      let sumar = carritoContenido.querySelector(".sumar");
       sumar.addEventListener("click", () => {
         producto.cantidad++;
         guardarCarrito();
         agregarAlCarrito();
       });
-      let eliminar = carContenido.querySelector(".borrar-producto");
+      let eliminar = carritoContenido.querySelector(".borrar-producto");
       eliminar.addEventListener("click", () => {
         eliminarProducto(producto.id);
       });
@@ -86,12 +88,12 @@ botonCompra.addEventListener("click", () => {
     }
     
 ///////////// Eliminar todos los productos del carrito /////////////
-    changuito = [];
-    localStorage.setItem("carrito", JSON.stringify(changuito));
+    chango = [];
+    localStorage.setItem("carrito", JSON.stringify(chango));
   
 ///////////// Ocultar el carrito /////////////
     carritoProductos.style.display = "none";
-    localStorage.setItem("carrito", JSON.stringify(changuito));
+    localStorage.setItem("carrito", JSON.stringify(chango));
   
 ///////////// Actualizar contador del carrito a cero /////////////
     cantidadCarrito.innerText = "0";

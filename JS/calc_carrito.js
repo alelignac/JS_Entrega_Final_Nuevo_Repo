@@ -9,13 +9,13 @@ function compraCarrito() {
 }
 ///////////// Guardar en Local Storage /////////////
 function guardarCarrito(){
-    localStorage.setItem("carrito", JSON.stringify(changuito));
+    localStorage.setItem("carrito", JSON.stringify(chango));
 };
 ///////////// Elimninar productos del carrito /////////////
 function eliminarProducto(id){
-    const buscarId = changuito.find((productos) => productos.id === id);
+    const buscarId = chango.find((productos) => productos.id === id);
 
-    changuito = changuito.filter((productoId) => {
+    chango = chango.filter((productoId) => {
         return productoId !== buscarId;
     });
 
@@ -27,7 +27,7 @@ function eliminarProducto(id){
 function carritoCantidad(){
     cantidadCarrito.style.display = "block";
 
-    const unidadesCarrito = changuito.length;
+    const unidadesCarrito = chango.length;
 
     localStorage.setItem("unidadesCarrito", JSON.stringify(unidadesCarrito));
 

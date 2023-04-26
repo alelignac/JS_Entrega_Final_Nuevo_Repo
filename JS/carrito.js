@@ -7,7 +7,7 @@ function agregarAlCarrito() {
     const carHeader = document.createElement("div");
     carHeader.className = "car-header";
     carHeader.innerHTML = `
-      <h1 class="titulo-carrito">Carrito de bebidas</h1>
+      <h2 class="titulo-carrito">Carrito de bebidas</h2>
     `;
     carritoProductos.append(carHeader);
     const carBoton = document.createElement("h4");
@@ -64,6 +64,7 @@ function agregarAlCarrito() {
     const botonCompra = document.createElement("button");
     botonCompra.innerText = "Comprar";
     botonCompra.id = "boton-comprar";
+    botonCompra.className ="btn btn-warning btn-compra"
   
 ///////////// Agregar evento click al botón de compra /////////////
 botonCompra.addEventListener("click", () => {

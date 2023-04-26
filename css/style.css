@@ -28,10 +28,21 @@ header{
     margin-right: 5vh;    
 }
 
+.btn-compra {
+    width: 15%;
+    align-items: center;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+}
+
 h1{
     margin-top: 10%;
     color: chocolate;
     padding-bottom: 20%;
+}
+
+h2{
+    color: chocolate;
 }
 .btn-green {
     margin-top: 2%;
@@ -63,7 +74,7 @@ h1{
   }
 
 .titulo-bebida{
-    background-color: rgb(248, 171, 109);
+    background-color: rgb(254, 171, 103);
     font-size: 60px;
     text-align: center;
     width: 100%;
@@ -170,7 +181,7 @@ body{
     max-height: 70%;
     flex-direction: column;
     align-items: center;
-    background-color: #7c7979;
+    background-color: #636161;
     position: fixed;
     overflow: auto;
     z-index: 9;
@@ -180,17 +191,17 @@ body{
 .car-header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(247, 161, 41);
+    background-color: rgb(247, 206, 162);
     color: aliceblue;
     width: 100%;
 }
 
 .car-boton-cerrar{
-    color: black;
+    color: white;
     cursor: pointer;
     margin-left: 60%;
     font-size: 25px;
-    background-color: aliceblue;
+    background-color: rgb(198, 7, 7);
     padding: 0px 15px;
     border-radius: 45%;
 }

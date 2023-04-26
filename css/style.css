@@ -3,7 +3,7 @@ header{
     background-position: center 80%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 500px;
     opacity: 80%;
     margin-top: -5%; 
 }
@@ -17,6 +17,13 @@ header{
     margin-bottom: auto;
   }
   
+.btn-contacto {
+    width: 10%;
+    align-items: center;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 .btn-green {
     background: rgb(147, 239, 147);
@@ -43,15 +50,6 @@ header{
     background: rgb(245, 210, 11);
   }
 
-  
-.titulo-pagina{
-    color: rgb(255, 255, 255);
-    font-size: 110px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding-top: 5%;
-}
-
 .titulo-bebida{
     background-color: rgb(248, 171, 109);
     font-size: 60px;
@@ -61,7 +59,7 @@ header{
     color: white;
     
 }
-
+/*
 .btn-more, .btn-yellow, .btn-blue, .btn-red, .btn-green, .btn-orange {
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +73,7 @@ header{
     color: black;
     border-radius: 4px;
   }
-  
+ */ 
 div p{
     text-align: center;
     font-size: 35px;

@@ -1,0 +1,262 @@
+header{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/864/081/non_2x/let-s-drink-concept-with-different-bottles-of-alcohol-drinks-party-pub-restoraunt-or-club-banner-alcohol-coctail-illustration-vector.jpg);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    opacity: 80%;
+    margin-top: -5%; 
+}
+
+/* 404 page */
+.image-404 {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+
+.btn-green {
+    background: rgb(147, 239, 147);
+    width: 10%;
+  }
+.btn-green:hover {
+    background: green;
+}
+  
+.btn-red {
+    background: rgb(244, 128, 128);
+    width: 10%;
+}
+  
+.btn-red:hover {
+    background: red;
+}
+
+.btn-yellow {
+    width: 20vh;
+    background: rgb(247, 237, 156);
+  }
+  .btn-yellow:hover {
+    background: rgb(245, 210, 11);
+  }
+
+  
+.titulo-pagina{
+    color: rgb(255, 255, 255);
+    font-size: 110px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.titulo-bebida{
+    background-color: rgb(248, 171, 109);
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+    color: white;
+    
+}
+
+.btn-more, .btn-yellow, .btn-blue, .btn-red, .btn-green, .btn-orange {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    border-radius: 4px;
+  }
+  
+div p{
+    text-align: center;
+    font-size: 35px;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.contenedor{    
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor .bebidas{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .bebidas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.contenedor .bebidas img{
+    width: 220px;
+    height: 220px;
+}
+
+.contenedor .bebidas h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor .bebidas b{
+    font-size: 20px;
+    padding: 0 1rem;
+}
+
+.agregar{
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(253, 113, 6);
+    margin-top: 20px;
+    border-radius: 100px;
+    padding: 2%;
+}
+
+.agregar:active{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(142, 232, 142);
+    margin-top: 20px;
+    border-radius: 100px;
+    padding: 2%;
+}
+
+.ver-carrito{
+    font-size: 43px;
+    height: 65px;
+    width: 65px;
+    background-color: #333;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    margin-left: 96%;
+    border-radius: 49px;
+}
+
+.style-changuito{
+    width: 100%;
+    margin: -5% 15%;
+    max-width: 70%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7c7979;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+
+.car-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 161, 41);
+    color: aliceblue;
+    width: 100%;
+}
+
+.car-boton-cerrar{
+    color: black;
+    cursor: pointer;
+    margin-left: 60%;
+    font-size: 25px;
+    background-color: aliceblue;
+    padding: 0px 15px;
+    border-radius: 45%;
+}
+
+.medioCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    color: aliceblue;
+    margin-top: 10px;
+    margin-left:-90px ;
+    margin-right: -90px;
+}
+
+.style-changuito > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+.contenidoTotal{
+    color: aliceblue;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+b{
+    font-size: 25px;
+    padding-left: 1%;
+    padding-right: 25%;
+}
+
+.borrar-producto{
+    cursor: pointer;
+}
+
+.cantidad-carrito{
+    background-color: rgb(251, 163, 91);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+
+.cantidad-en-carrito{
+    font-size: 20px;
+}
+
+.total-carrito{
+    font-size: 20px;
+}
+
+.restar{
+    cursor: pointer;
+}
+
+.sumar{
+    cursor: pointer;
+}

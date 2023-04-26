@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alejandro Lignac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Deploy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <div class="nav-changuito">
+        <nav class="navbar">
+            <h1 class="ver-carrito" id="abrirCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+            <form class="container-fluid justify-content-start">
+                <button class="btn btn-warning" type="button" onclick="location.href='./pages/contacto.html'">Contacto</button>
+            </form>
+            
+        </nav>
+    </div>
+    <div>
+        <h2 class="titulo-bebida navbar-brand animate__heartBeat">Almacen de bebidas</h2>
+        <hr>
+        <p>Busca nuestras bebidas seleccionadas!</p>
+    </div>
+    <div id="contenedor" class="contenedor">
+    </div> 
+    <div id="changuitos" class="style-changuito">
+        
+    </div>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/carrito.js"></script>
+    <script src="./JS/calc_carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+    <div class="CopyRightText">
+         <p>Copyright Alejandro Lignac © 2022. Todos los derechos reservados.</p>
+    </div>
+</html>

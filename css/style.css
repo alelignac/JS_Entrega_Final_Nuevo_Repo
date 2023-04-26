@@ -34,8 +34,9 @@ h1{
     padding-bottom: 20%;
 }
 .btn-green {
+    margin-top: 2%;
     background: rgb(147, 239, 147);
-    width: 10%;
+    width: 100%;
   }
 .btn-green:hover {
     background: green;
@@ -43,7 +44,9 @@ h1{
   
 .btn-red {
     background: rgb(244, 128, 128);
-    width: 10%;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
   
 .btn-red:hover {
